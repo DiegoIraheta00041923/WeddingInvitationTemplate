@@ -1,0 +1,59 @@
+#root {
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+    --primary_color: #F5EFD7;
+}
+
+body {
+  background-color: var(--primary_color);
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+
+h2, p{
+  color: black;
+} 
+
+
+.welcome{
+  position: relative;
+}
+
+.photo1{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.imagen-marco{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  z-index: 20;
+}
+
+.Names{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: #fff;
+  z-index: 30;
+}
+
+.Date-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

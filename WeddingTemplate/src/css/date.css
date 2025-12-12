@@ -1,0 +1,36 @@
+/* Contenedor Principal */
+.date-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  max-width: 200px;
+  border-top: 2px solid #D4AF37;    /* Línea arriba */
+  border-bottom: 2px solid #D4AF37;
+}
+
+.date-content {
+  display: flex;
+  flex-direction: row; 
+  align-items: baseline; 
+  padding: 5px 0;
+  color: #555353; 
+}
+
+
+.date-day {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 0px 7px;
+    line-height: 1;
+}
+
+/* Estilo para el Mes y el Año (Textos pequeños) */
+.date-month,
+.date-year {
+  font-size: 2em; /* Tamaño de texto estándar */
+  font-weight: 400;
+  /* El mes y el año se alinean verticalmente con el número grande */
+  align-self: flex-start;
+  /* Ajusta el margen si es necesario para moverlos un poco arriba o abajo */
+}
