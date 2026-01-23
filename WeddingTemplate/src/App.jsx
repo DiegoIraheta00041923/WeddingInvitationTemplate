@@ -9,7 +9,7 @@ function App() {
     <>
       <header class="header-container">
         <div class="welcome">
-          <img src="\public\pics\DecorationAdded.jpg" className="photo1" />
+          <img src="/pics/DecorationAdded.jpg" className="photo1" />
           <div className='Names'>
             Name 1 & Name 2
           </div>
