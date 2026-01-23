@@ -1,0 +1,50 @@
+
+.wedding-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-timer {
+  display: flex;
+  flex-direction: column; 
+}
+
+.timer-item {
+  position: relative; 
+  width: 180px;  
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floral-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none; /* Para que no interfiera con clics */
+}
+
+.timer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  line-height: 1;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #8a8a8a;
+  margin-top: 5px;
+}

@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #2d3436;
+  --accent-color: #636e72;
+  --bg-color: #f9f9f9;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+.rsvp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  font-family: 'Inter', -apple-system, sans-serif;
+  padding: 20px;
+}
+
+.rsvp-card {
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+.rsvp-subtitle {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.rsvp-form {
+  text-align: left;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+.input-group input[type="text"],
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.radio-group input {
+  margin-right: 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
