@@ -3,16 +3,16 @@ import DateDisplay from './components/date.jsx';
 import CountdownTimer from './components/timer.jsx';
 import MusicPlayer from './components/musicplayer.jsx';
 import RSVPForm from './components/rsvp.jsx';
+import { PiChurchThin } from "react-icons/pi";
+import { RiHotelLine } from "react-icons/ri";
 function App() {
 
   return (
     <>
       <header class="header-container">
         <div class="welcome">
-          <img src="/pics/DecorationAdded.jpg" className="photo1" />
-          <div className='Names'>
-            Name 1 & Name 2
-          </div>
+          <img src="/pics/FOTO1-4.png" className="photo1" />
+          
         </div>
       </header>
       <div className='Date'>
@@ -22,9 +22,6 @@ function App() {
         </div>
       </div>
       <section className='countdown'>
-        <div className='countdown-info'>
-          <h2>Solo faltan...</h2>
-        </div>
         <div className='countdown-timer'>
           <CountdownTimer targetDate="2026-10-03T23:59:59" />
         </div>
@@ -41,32 +38,27 @@ function App() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore ducimus amet pariatur, consectetur minus ea accusamus tempora cum accusantium enim quod dolore facilis vero voluptatum eligendi sapiente. Minus, mollitia!</p>
         </div>
       </section>
-      <section className='moments'>
-        <h1>Nuestros Momentos</h1>
-        <img src="/pics/FloralDownFrame2.png" className='frame1' />
-        <img src="\public\pics\DecorationAdded.jpg" className="photo1" />
-      </section>
       <section className='details'>
         <h1>Detalles del evento</h1>
-        <img src="/pics/ArrowDownSmall2.png" className='frame2' />
+        <PiChurchThin size={80} style={{color: 'black'}}></PiChurchThin>
         <div className='detail-box'>
           <div className='title-detail'>
             <h2>Ceremonia</h2>
           </div>
-          <h2>Recepción</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore ducimus amet pariatur, consectetur minus ea accusamus tempora cum accusantium enim quod dolore facilis vero voluptatum eligendi sapiente. Minus, mollitia!</p>
+          <h2>Parroquia Nuestra Señora de las Gracias - Onuva</h2>
+          <p>Hora: 3:30 pm</p>
           <div className='location-buttons'>
             <button>Google Maps</button>
             <button>Waze</button>
           </div>
         </div>
-        <img src="/pics/ArrowDownSmall2.png" className='frame2' />
         <div className='detail-box'>
+          <RiHotelLine size={80} style={{color: 'black'}} ></RiHotelLine>
           <div className='title-detail'>
             <h2>Recepción</h2>
           </div>
-          <h2>Lugar</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore ducimus amet pariatur, consectetur minus ea accusamus tempora cum accusantium enim quod dolore facilis vero voluptatum eligendi sapiente. Minus, mollitia!</p>
+          <h2>Hotel Barceló</h2>
+          <p>5:00 pm</p>
           <div className='location-buttons'>
             <button>Google Maps</button>
             <button>Waze</button>
@@ -75,13 +67,11 @@ function App() {
       </section>
       <section className='itinerario'>
         <h1>Itinerario</h1>
+        <img src="/pics/Itinerario.png" className='itinerario-img' />
       </section>
       <section className='dresscode'>
         <h1>Dress code</h1>
-        <div className='dresscode-options'>
-          <img src="/pics/dresscode-m.png" className='dresscode-img' />
-          <img src="/pics/dresscode-w.png" className='dresscode-img' />
-        </div>
+        <img src="/pics/DressCode.png" className='dresscode-img' />
       </section>
       <section className='gift'>
         <h1>Regalo</h1>

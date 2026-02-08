@@ -1,50 +1,54 @@
+/* Importación de fuente elegante (estilo invitación) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
-.wedding-wrapper {
+.countdown-card {
+  background-color: #ffffff;
+  border: 1.5px solid #c4b5a2; /* Tono champagne/arena */
+  padding: -1px 60px;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #4a4a4a;
+  border-radius: 2px;
+}
+
+.countdown-title {
+  font-size: 2.2rem;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  color: #5b5b5b;
+  /* El toque sutil de la imagen parece ser un poco itálico */
+  font-style: italic;
+}
+
+.countdown-divider {
+  border-top: 1.2px solid #c4b5a2;
+  margin: 0 0px 25px 0px; /* Se extiende hasta los bordes del contenedor */
+}
+
+.countdown-grid {
   display: flex;
+  gap: 35px;
   justify-content: center;
 }
 
-.vertical-timer {
-  display: flex;
-  flex-direction: column; 
-}
-
-.timer-item {
-  position: relative; 
-  width: 180px;  
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.floral-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  pointer-events: none; /* Para que no interfiera con clics */
-}
-
-.timer-content {
+.countdown-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  min-width: 70px;
 }
 
-.number {
-  font-family: 'Playfair Display', serif;
+.countdown-number {
   font-size: 2.5rem;
-  color: #4a4a4a;
-  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #3d3d3d;
 }
 
-.label {
-  font-family: 'Montserrat', sans-serif;
+.countdown-label {
   font-size: 0.9rem;
-  color: #8a8a8a;
-  margin-top: 5px;
+  font-weight: 600;
+  color: #8e8e8e;
+  text-transform: capitalize;
 }

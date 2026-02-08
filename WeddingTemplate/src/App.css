@@ -41,7 +41,7 @@ h1, h2, p{
 .photo1{
   width: 100%;
   display: block;
-  height: auto;
+  height: 10%;
 }
 
 .imagen-marco{
@@ -70,6 +70,7 @@ h1, h2, p{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 25px
 }
 
 .countdown-info{
@@ -140,51 +141,11 @@ h1, h2, p{
   gap: 13px;
 }
 
-.dresscode {
-  position: relative; 
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  min-height: 150px; 
-  overflow: hidden; 
-  background-color: #ffffff; 
-  padding: 20px;
+
+.itinerario-img{
+  width: 110%;
 }
 
-.dresscode h1 {
-  position: relative;
-  z-index: 10; 
-  color: #222222; 
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-.dresscode-options {
-  position: absolute; 
-  top: 0;
-  left: 0;
+.dresscode-img{
   width: 100%;
-  height: 100%;
-  z-index: 1; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  gap: 40px; 
-}
-
-.dresscode-img {
-  opacity: 0.45;
-  width: 40%; 
-  max-width: 300px; 
-  height: auto;
-  object-fit: contain;
-}
-
-.dresscode:hover .dresscode-img {
-  opacity: 0.8;
-  transform: scale(1.05);
 }
